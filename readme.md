@@ -21,4 +21,5 @@ El objetivo del proyecto es automatizar distintas pruebas funcionales de una apl
 
 ## Funcionamiento de las pruebas
 - Test cart:
-- 
+- Test inventory
+- Test Login
