@@ -11,6 +11,7 @@ El objetivo del proyecto es automatizar distintas pruebas funcionales de una apl
 - Pytest
 - Pytest HTML
 - Git
+- Github
 
 ## Instalación
 `git clone https://github.com/Gikza/Pre-Entrega.git`
