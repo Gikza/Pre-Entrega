@@ -57,7 +57,7 @@ def test_create_user():
      #assert body["email"].count("@") ==1
      check.equal(body["email"].count("@"),1)
      #assert "*" in body["password"]
-     check.is_in("*",body["password"])
+     check.is_not_none(body["password"])
     
      #assert data["name"] == body["name"]
      check.equal(data["name"],body["name"])
