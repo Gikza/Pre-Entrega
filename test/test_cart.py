@@ -2,8 +2,9 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import pytest
 
-def test_cart(login_in_driver):
-    driver = login_in_driver
+@pytest.mark.smoke
+def test_cart(driver_logged):
+    driver = driver_logged
 
     # Agregar producto al carrito
     driver.find_elements(By.CLASS_NAME, "btn_inventory")[0].click()
@@ -11,7 +12,7 @@ def test_cart(login_in_driver):
     contador_cart = driver.find_element(By.CLASS_NAME, "shopping_cart_badge")
 
 # Verificar contador carrito
-    assert contador_cart.text == "1" "El producto no se agregó correctamente"
+    assert contador_cart.text == "1", "El producto no se agregó correctamente"
 
     # Obtener nombre del primer producto
     product_name = driver.find_elements(By.CLASS_NAME, "inventory_item_name")[0].text
@@ -20,7 +21,7 @@ def test_cart(login_in_driver):
     driver.find_element(By.CLASS_NAME, "shopping_cart_link").click()
 
     # Obtener el nombre del producto en el carrito
-    cart_item = driver.find.element(By.CLASS_NAME, "inventory_item_name")
+    cart_item = driver.find_element(By.CLASS_NAME, "inventory_item_name").text
 
     # Verificar el producto agregado en el carrito
 
