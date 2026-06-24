@@ -62,7 +62,7 @@ def test_create_user():
      #assert data["name"] == body["name"]
      check.equal(data["name"],body["name"])
      #assert data["email"] == body["email"]
-     check.equal(body["email"].count("@",1))
+     check.equal(body["email"].count("@"),1)
      #assert response.elapsed.total_seconds() < 1
      check.less(response.elapsed.total_seconds(),1)
 
