@@ -27,6 +27,6 @@ def test_cart_json(driver_logged):
         print(productos_carrito)
         print(productos)
 
-        assert encontrado, f"Producto incorrecto o faltante: {producto_json["nombre"]}"        
+        assert encontrado, f"Producto incorrecto o faltante: {producto_json['nombre']}"        
      
                    
