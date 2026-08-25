@@ -1,26 +1,21 @@
-# Proyecto de automatización QA - Gikza Carmona
+# Proyecto de Automatizacion QA — Gikza Carmona
 
-## Descripción
-Selenium WebDriver y Pytest
+![Tests](https://github.com/Gikza/Proyecto-Final/actions/workflows/tests.yml/badge.svg)
 
-El objetivo del proyecto es automatizar distintas pruebas funcionales de una aplicación
+## Descripcion
+Proyecto de automatizacion de pruebas funcionales sobre una aplicacion web, utilizando Selenium WebDriver y Pytest con estructura Page Object Model (POM).
 
-## Tecnologías usadas
+## Tecnologias
 - Python
 - Selenium WebDriver
-- Pytest
-- Pytest HTML
-- Git
-- Github
+- Pytest + Pytest-HTML
+- GitHub Actions (CI)
+- Git / GitHub
 
-## Instalación
-`git clone https://github.com/Gikza/Pre-Entrega.git`
-
-## Instalación dependencias
-
-`pip install -r requirements.txt`
-
-## Funcionamiento de las pruebas
-- Test cart:
-- Test inventory
-- Test Login
+## Estructura del proyecto
+- `test/` — casos de prueba automatizados
+- `page/` — Page Objects
+- `features/` — flujos funcionales
+- `utils/` — funciones auxiliares
+- `data/` — datos de prueba
+- `reports/` — capturas
